@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class question01_part2 
+public class question01_part3 
 {
 	public static void main(String[] args)
 	{
@@ -23,13 +23,18 @@ public class question01_part2
 	
 	if (fullname.equalsIgnoreCase(full_name))
 	{
-	System.out.println("Enter your full name sucesful");
+	System.out.println("Enter your full name succesful!");
 	System.out.printf("%s\n",fullname);
 	} 
 	else
 	{
 	System.out.println("Try again!!");
-	
 	}
+
+    String modifiedFullName = (firstname + " " + middlename + " " + lastname);
+    modifiedFullName = modifiedFullName.replace('a', '@').replace('e', '3');
+    modifiedFullName = modifiedFullName.toUpperCase();
+
+    System.out.printf("Modified Full Name: %s\n",modifiedFullName);
 	}
 }
